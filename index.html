@@ -23,9 +23,9 @@
             <span class="logo-accent">Web</span>Studio
           </a>
           <ul class="list-nav">
-            <li class="item"><a class="nav-link nav-link_active link" href="./index.html">Студия</a></li>
-            <li class="item"><a class="nav-link link" href="./portfolio.html">Портфолио</a></li>
-            <li class="item"><a class="nav-link link" href="./index.html">Контакты</a></li>
+            <li class="item"><a class="nav-link nav-link_active link navigation" href="./index.html">Студия</a></li>
+            <li class="item"><a class="nav-link link navigation-link" href="./portfolio.html">Портфолио</a></li>
+            <li class="item"><a class="nav-link link navigation-link" href="./index.html">Контакты</a></li>
           </ul>
         <ul class="list-contact">
           <li class="contact-item item">
@@ -52,7 +52,7 @@
         <h1 class="main-screen__title">
           ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА
         </h1>
-        <button class="main-screen__button" type="button">Заказать услугу</button>
+        <button class="main-screen__button" type="button" data-modal-open>Заказать услугу</button>
       </section>
       </div>
       <section class="benefits">
@@ -112,12 +112,15 @@
         <ul class="list-tasks">
           <li class="tasks-item">
             <img class="tasks-img" src="./images/Other/layout.jpg" alt="Макет работы" width="370" />
+            <p class="item-above">Десктопные приложения</p>
           </li>
           <li class="tasks-item">
             <img class="tasks-img" src="./images/Other/iphone.jpg" alt="Проверка с помощью смартфона" width="370" />
+            <p class="item-above">Мобильные приложения</p>
           </li>
           <li class="tasks-item">
             <img class="tasks-img" src="./images/Other/ipad.jpg" alt="Цветная палитра" width="370" />
+            <p class="item-above">Дизайнерские решения</p>
           </li>
         </ul>
         </div>
@@ -386,5 +389,13 @@
       </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close-btn" data-modal-close><svg class="social-soc-icon" width="11" height="11">
+                    <use href="./images/SVG/symbol-defs.svg#icon-close"></use>
+                </svg></button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
   </body>
 </html>
